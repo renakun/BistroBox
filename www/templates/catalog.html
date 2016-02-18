@@ -1,0 +1,31 @@
+<ion-view view-title="{{Title}}" class="bar-dark" cache-view="false">
+  <ion-nav-title>
+  <img src='img/bistrobox_mini.png'>
+  </ion-nav-title>
+
+  <ion-content>
+    <!-- <ion-catalog products='products' currentcatid='currentcatid'>
+    </ion-catalog> -->
+    <ion-item ng-repeat="menucategory in menucategories" class="no-padding" style="border-bottom: 3px solid white;">
+      <a href="#/app/category/{{menucategory.id}}" class="catTitle" style="border-bottom: 2px solid white;">
+        <div class="category" style="border-bottom: 2px solid white;">
+        <!-- <div class="category" img-card="{{menucategory.backgroundImage}}"> -->
+          <div class="overlayimg">
+            <img style="width:100%; background-size:cover;" ng-src="{{menucategory.backgroundImage}}">
+            <h2 style="font-size: 1em; font-weight: bold; color: #fff;  z-index: 2;">
+               {{menucategory.Prefix}} {{menucategory.Name}}
+               <!-- ({{menucategory.Prods}}) -->
+            </h2>
+          </div>
+
+        <h2 style="font-size: 1em; font-weight: bold; color: #fff;  z-index: 2;">
+           {{menucategory.Prefix}} {{menucategory.Name}}
+           <!-- ({{menucategory.Prods}}) -->
+        </h2>
+          <div ></div>
+        </div>
+
+      </a>
+    </ion-item>
+  </ion-content>
+</ion-view>

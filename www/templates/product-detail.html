@@ -1,0 +1,47 @@
+<div class="modal">
+  <ion-header-bar class="bar-light">
+    <h1 class="title">{{menucategory.Name}}</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModal()"><i class="ion-close-circled"></i></button>
+    </div>
+  </ion-header-bar>
+  <ion-content padding="true" class="has-header">
+    <div class="list card">
+      <div class="item">
+        <div class="">
+          <h2>{{product.Name}}</h2>
+        </div>
+      </div>
+      <div class="item item-image">
+        <img ng-src="{{product.Image1}}">
+      </div>
+      <div class="product-button">
+        <div class="list">
+          <p class="product-description">{{product.Description}}</p>
+          <!-- <div class="row align-center">
+          <div class="col col-50">
+          <div class="text-center">
+          Quantity
+        </div>
+        <div class="text-center"ng-model="quantity">
+        <a ng-click="minusOne()" style="float: left" class="button button-icon icon ion-arrow-left-b"></a>
+        {{quantity}}
+        <a ng-click="plusOne()"style="float: right" class="button button-icon icon ion-arrow-right-b"></a>
+      </div>
+    </div>
+    <div class="col col-50">
+    <div class="text-center"> Total </div>
+    <div class="text-center">{{getTotal(quantity, product.myPrice)}}</div>
+  </div>
+  </div> -->
+        </div>
+  <!-- <button ng-click="addToOrder(item)"class="icon-left ion-plus-round button button-block button-balanced">
+  Add to order
+  </button>
+  <button class="icon-left ion-ios-heart button button-block button-calm">
+  Favorite
+  </button> -->
+  </div>
+  </div>
+  </ion-content>
+</div>
